@@ -17,4 +17,4 @@ def download_data(train_ratio=0.8):
     print(f"Data split with {train_ratio*100}% for training and {(1-train_ratio)*100}% for testing.")
 
 if __name__ == "__main__":
-    download_data(train_ratio=0.8) 
+    download_data(train_ratio=0.7) 

@@ -1,5 +1,4 @@
 dvc
-transformers
 datasets
 scikit-learn
 joblib

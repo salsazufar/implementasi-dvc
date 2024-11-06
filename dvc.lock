@@ -5,24 +5,24 @@ stages:
     deps:
     - path: download_data.py
       hash: md5
-      md5: 2cb9278c663f1fbdee557c8ec3dbd7a0
+      md5: 8ccd86e8286a10a5e24b8fb42b4955ed
       size: 718
     outs:
     - path: data/imdb_test.csv
       hash: md5
-      md5: 22cda511a77126d789fffec3dba8fd1e
-      size: 6708803
+      md5: 3d876131283f75de4c45f8130c3d77af
+      size: 10002199
     - path: data/imdb_train.csv
       hash: md5
-      md5: c180efbd92c090b72e733e38189888bf
-      size: 26638377
+      md5: 0c59c478fb3953571d0e832a99af7da7
+      size: 23344981
   train_model:
     cmd: python train_model.py
     deps:
     - path: data/imdb_train.csv
       hash: md5
-      md5: c180efbd92c090b72e733e38189888bf
-      size: 26638377
+      md5: 0c59c478fb3953571d0e832a99af7da7
+      size: 23344981
     - path: train_model.py
       hash: md5
       md5: eb5a3c21cfc04a015ae45ae0cba6ec3b
@@ -30,5 +30,5 @@ stages:
     outs:
     - path: models/sentiment_model.pkl
       hash: md5
-      md5: 66e7870f449b9f949ac70e5e6728e7ca
-      size: 2565777
+      md5: 665fb7154c051567b6631bcb0ceb8986
+      size: 2434609
