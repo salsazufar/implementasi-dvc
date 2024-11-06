@@ -1,0 +1,8 @@
+stages:
+  download_data:
+    cmd: python download_data.py
+    deps:
+    - download_data.py
+    outs:
+    - data/imdb_test.csv
+    - data/imdb_train.csv
