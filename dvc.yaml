@@ -6,3 +6,10 @@ stages:
     outs:
     - data/imdb_test.csv
     - data/imdb_train.csv
+  train_model:
+    cmd: python train_model.py
+    deps:
+    - data/imdb_train.csv
+    - train_model.py
+    outs:
+    - models/sentiment_model.pkl
